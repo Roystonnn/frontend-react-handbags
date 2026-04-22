@@ -1,14 +1,14 @@
-import './ButtonCard.css'
+function buttonLog(e) {
+    console.log(e.target.innerText);
+}
 
 function ButtonCard(props) {
 
     return (
         <>
-            <nav>
-                <button>
+                <button onClick={buttonLog}>
                     {props.buttonTitle}
                 </button>
-            </nav>
         </>
     )
 }
